@@ -11,6 +11,13 @@
 		D93F5CA42A03AF2F008EF531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CA32A03AF2F008EF531 /* ContentView.swift */; };
 		D93F5CA62A03AF31008EF531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5CA52A03AF31008EF531 /* Assets.xcassets */; };
 		D93F5CA92A03AF31008EF531 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5CA82A03AF31008EF531 /* Preview Assets.xcassets */; };
+		D93F5CB02A03B528008EF531 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CAF2A03B528008EF531 /* HomeView.swift */; };
+		D93F5CB22A03BB88008EF531 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CB12A03BB88008EF531 /* HomeModel.swift */; };
+		D93F5CB42A03CD70008EF531 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CB32A03CD70008EF531 /* GameView.swift */; };
+		D93F5CC62A06A1E8008EF531 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = D93F5CC52A06A1E8008EF531 /* SwiftUIKit */; };
+		D93F5CC82A06A236008EF531 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC72A06A236008EF531 /* HomeHeaderView.swift */; };
+		D93F5CCA2A06A263008EF531 /* HomeNewGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC92A06A263008EF531 /* HomeNewGamesView.swift */; };
+		D93F5CCC2A06A290008EF531 /* HomeAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CCB2A06A290008EF531 /* HomeAdsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		D93F5CA32A03AF2F008EF531 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D93F5CA52A03AF31008EF531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93F5CA82A03AF31008EF531 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D93F5CAF2A03B528008EF531 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D93F5CB12A03BB88008EF531 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		D93F5CB32A03CD70008EF531 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D93F5CC72A06A236008EF531 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		D93F5CC92A06A263008EF531 /* HomeNewGamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewGamesView.swift; sourceTree = "<group>"; };
+		D93F5CCB2A06A290008EF531 /* HomeAdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAdsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F5CC62A06A1E8008EF531 /* SwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +67,12 @@
 			children = (
 				D93F5CA12A03AF2F008EF531 /* StretchyHeaderApp.swift */,
 				D93F5CA32A03AF2F008EF531 /* ContentView.swift */,
+				D93F5CAF2A03B528008EF531 /* HomeView.swift */,
+				D93F5CC72A06A236008EF531 /* HomeHeaderView.swift */,
+				D93F5CC92A06A263008EF531 /* HomeNewGamesView.swift */,
+				D93F5CCB2A06A290008EF531 /* HomeAdsView.swift */,
+				D93F5CB32A03CD70008EF531 /* GameView.swift */,
+				D93F5CB12A03BB88008EF531 /* HomeModel.swift */,
 				D93F5CA52A03AF31008EF531 /* Assets.xcassets */,
 				D93F5CA72A03AF31008EF531 /* Preview Content */,
 			);
@@ -83,6 +103,9 @@
 			dependencies = (
 			);
 			name = StretchyHeader;
+			packageProductDependencies = (
+				D93F5CC52A06A1E8008EF531 /* SwiftUIKit */,
+			);
 			productName = StretchyHeader;
 			productReference = D93F5C9E2A03AF2F008EF531 /* StretchyHeader.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = D93F5C952A03AF2F008EF531;
+			packageReferences = (
+				D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+			);
 			productRefGroup = D93F5C9F2A03AF2F008EF531 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +163,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F5CCC2A06A290008EF531 /* HomeAdsView.swift in Sources */,
+				D93F5CC82A06A236008EF531 /* HomeHeaderView.swift in Sources */,
+				D93F5CB22A03BB88008EF531 /* HomeModel.swift in Sources */,
+				D93F5CB02A03B528008EF531 /* HomeView.swift in Sources */,
 				D93F5CA42A03AF2F008EF531 /* ContentView.swift in Sources */,
 				D93F5CA22A03AF2F008EF531 /* StretchyHeaderApp.swift in Sources */,
+				D93F5CB42A03CD70008EF531 /* GameView.swift in Sources */,
+				D93F5CCA2A06A263008EF531 /* HomeNewGamesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +307,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mohamed-Shimy/SwiftUIKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D93F5CC52A06A1E8008EF531 /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D93F5C962A03AF2F008EF531 /* Project object */;
 }
