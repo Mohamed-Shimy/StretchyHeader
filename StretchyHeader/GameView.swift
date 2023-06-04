@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SHKit
 
 struct GameView: View {
     
@@ -17,7 +18,7 @@ struct GameView: View {
                 .foregroundColor(.white)
                 .shadow(radius: 5)
                 .frame(minWidth: 50, minHeight: 50)
-                .linearGradient([.green, .purple, .pink], start: .topTrailing, end: .bottomLeading)
+                .linearGradientBackground([.green, .purple, .pink], start: .topTrailing, end: .bottomLeading)
                 .cornerRadius(5)
             
             VStack(alignment: .leading, spacing: 5) {

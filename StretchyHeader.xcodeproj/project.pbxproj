@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D90584EC2A2D0BE80092FC58 /* SHKit in Frameworks */ = {isa = PBXBuildFile; productRef = D90584EB2A2D0BE80092FC58 /* SHKit */; };
 		D93F5CA22A03AF2F008EF531 /* StretchyHeaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CA12A03AF2F008EF531 /* StretchyHeaderApp.swift */; };
 		D93F5CA42A03AF2F008EF531 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CA32A03AF2F008EF531 /* ContentView.swift */; };
 		D93F5CA62A03AF31008EF531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93F5CA52A03AF31008EF531 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		D93F5CB02A03B528008EF531 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CAF2A03B528008EF531 /* HomeView.swift */; };
 		D93F5CB22A03BB88008EF531 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CB12A03BB88008EF531 /* HomeModel.swift */; };
 		D93F5CB42A03CD70008EF531 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CB32A03CD70008EF531 /* GameView.swift */; };
-		D93F5CC62A06A1E8008EF531 /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = D93F5CC52A06A1E8008EF531 /* SwiftUIKit */; };
 		D93F5CC82A06A236008EF531 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC72A06A236008EF531 /* HomeHeaderView.swift */; };
 		D93F5CCA2A06A263008EF531 /* HomeNewGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CC92A06A263008EF531 /* HomeNewGamesView.swift */; };
 		D93F5CCC2A06A290008EF531 /* HomeAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F5CCB2A06A290008EF531 /* HomeAdsView.swift */; };
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D93F5CC62A06A1E8008EF531 /* SwiftUIKit in Frameworks */,
+				D90584EC2A2D0BE80092FC58 /* SHKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +104,7 @@
 			);
 			name = StretchyHeader;
 			packageProductDependencies = (
-				D93F5CC52A06A1E8008EF531 /* SwiftUIKit */,
+				D90584EB2A2D0BE80092FC58 /* SHKit */,
 			);
 			productName = StretchyHeader;
 			productReference = D93F5C9E2A03AF2F008EF531 /* StretchyHeader.app */;
@@ -135,7 +135,7 @@
 			);
 			mainGroup = D93F5C952A03AF2F008EF531;
 			packageReferences = (
-				D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+				D90584EA2A2D0BE80092FC58 /* XCRemoteSwiftPackageReference "SHKit" */,
 			);
 			productRefGroup = D93F5C9F2A03AF2F008EF531 /* Products */;
 			projectDirPath = "";
@@ -375,21 +375,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+		D90584EA2A2D0BE80092FC58 /* XCRemoteSwiftPackageReference "SHKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Mohamed-Shimy/SwiftUIKit.git";
+			repositoryURL = "https://github.com/Mohamed-Shimy/SHKit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D93F5CC52A06A1E8008EF531 /* SwiftUIKit */ = {
+		D90584EB2A2D0BE80092FC58 /* SHKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D93F5CC42A06A1E8008EF531 /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
-			productName = SwiftUIKit;
+			package = D90584EA2A2D0BE80092FC58 /* XCRemoteSwiftPackageReference "SHKit" */;
+			productName = SHKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

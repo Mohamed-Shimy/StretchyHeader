@@ -6,20 +6,20 @@
 //
 
 import SwiftUI
-import SwiftUIKit
+import SHKit
 
 struct HomeView: View {
     
     @StateObject private var model = HomeModel()
     @State private var offset: CGPoint = .zero
     
-    private var headerHeight: CGFloat { mainScreenSize.height / 2.2 }
+    private var headerHeight: CGFloat { UIScreen.main.bounds.height / 2.2 }
     private var showTopView: Bool { offset.y >= headerHeight }
     
     var body: some View {
         GeometryReader { proxy in
             ZStack(alignment: .top) {
-                IScrollView(.vertical, offset: $offset) {
+                SHScrollView(.vertical, offset: $offset) {
                     VStack {
                         HomeHeaderView(height: headerHeight)
                             .frame(height: headerHeight)

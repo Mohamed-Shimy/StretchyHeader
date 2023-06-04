@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import SwiftUIKit
+import SHKit
 
 struct HomeHeaderView: View {
     
@@ -22,7 +22,7 @@ struct HomeHeaderView: View {
                 .shadow(radius: 5)
                 .frame(maxWidth: .infinity)
                 .frame(height: height)
-                .linearGradient([.green, .purple, .pink], start: .leading, end: .trailing)
+                .linearGradientBackground([.green, .purple, .pink], start: .leading, end: .trailing)
                 .cornerRadius(15)
                 .offset(y: $0.globalMinY > 0 ? -$0.globalMinY : 0)
         }
